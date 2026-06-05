@@ -779,7 +779,7 @@
 
 <!-- ─── Nav ─── -->
 <nav>
-  <a href="#hero" class="nav-logo">PK/</a>
+  <a href="#hero" class="nav-logo">MS/</a>
   <ul class="nav-links">
     <li class="hide-mobile"><a href="#projects">Projects</a></li>
     <li class="hide-mobile"><a href="#skills">Skills</a></li>
@@ -800,7 +800,7 @@
   <div class="hero-inner">
     <div class="hero-pill">
       <span class="hero-pill-dot"></span>
-      Available for opportunities
+      Open to new opportunities
     </div>
 
     <h1 class="hero-title">
@@ -927,7 +927,7 @@
   <div class="container">
     <p class="section-eyebrow reveal">Tech Stack</p>
     <h2 class="section-heading reveal d1">Skills</h2>
-    <p class="section-lead reveal d2">What I actually bring to the table — a strong eye for what's possible, and the AI fluency to make it real.</p>
+    <p class="section-lead reveal d2">My actual skill set — from enterprise IT and networking to AI-assisted development and creative side projects.</p>
     <div class="skills-grid" id="skills-grid">
       <!-- Populated by JS -->
     </div>
@@ -941,9 +941,9 @@
     <h2 class="section-heading reveal d1">About Me</h2>
     <div class="about-grid">
       <div class="about-text reveal d2">
-        <p>I'm a developer who loves making systems talk to each other. My work lives at the intersection of APIs, data pipelines, and user-facing tools — finding ways to connect services that weren't designed to connect.</p>
-        <p>The projects that excite me most are the ones that fill a real gap: a Russian anime dub library that isn't available in your app of choice, a streaming source that needs an ID bridge before it can talk to the player. If something can be automated or integrated, I'll find the path.</p>
-        <p>Currently deep in the JavaScript ecosystem, with a focus on streaming infrastructure, API integration patterns, and Node.js tooling.</p>
+        <p>I'm a certified IT professional and network technician based in Rishon LeZion, Israel. By day I work as a Tier 2 Support Technician at Ness Technologies (Applied Materials), handling escalated issues, Active Directory administration, and network infrastructure.</p>
+        <p>Outside of work I build personal projects — mostly tools that scratch an itch or fill a gap I notice. I use AI heavily to bring ideas to life, and I enjoy the creative side of technology just as much as the technical one.</p>
+        <p>Fluent in Russian, Hebrew, and English. Always looking for the next challenge in IT and open to opportunities in more advanced environments.</p>
         <div style="margin-top:1.75rem;display:flex;gap:.75rem;flex-wrap:wrap;">
           <a href="https://github.com/PabloKolaso" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -955,20 +955,20 @@
 
       <div class="stats-block reveal d3">
         <div class="stat-tile">
+          <span class="stat-value">Tier 2</span>
+          <span class="stat-label">Support Level</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">CCNA</span>
+          <span class="stat-label">Certified</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Languages Spoken</span>
+        </div>
+        <div class="stat-tile">
           <span class="stat-value" id="stat-repos">5</span>
-          <span class="stat-label">Public Repos</span>
-        </div>
-        <div class="stat-tile">
-          <span class="stat-value" id="stat-stars">6</span>
-          <span class="stat-label">Total Stars</span>
-        </div>
-        <div class="stat-tile">
-          <span class="stat-value">4</span>
-          <span class="stat-label">API Pipelines</span>
-        </div>
-        <div class="stat-tile">
-          <span class="stat-value">JS</span>
-          <span class="stat-label">Primary Lang</span>
+          <span class="stat-label">Side Projects</span>
         </div>
       </div>
     </div>
@@ -1031,9 +1031,9 @@
 
   // ── Typing effect ─────────────────────────────────────────────────────
   const phrases = [
-    'I build tools that connect APIs and make things just work.',
-    'Turning complex integrations into seamless experiences.',
-    'Building the bridges between systems that were never meant to talk.',
+    'IT professional who builds things just for the fun of it.',
+    'Certified network technician with a creative side.',
+    'I keep networks running and ship side projects in my spare time.',
   ];
 
   const typedEl = document.getElementById('typed');
@@ -1082,16 +1082,16 @@
   function langColor(l) { return LANG_COLORS[l] || '#6366f1'; }
 
   const STATIC_SKILLS = [
-    { icon: '🤖', name: 'AI-Assisted Dev',     note: 'Claude, ChatGPT, Copilot' },
-    { icon: '✨', name: 'Prompt Engineering',   note: 'Getting the most out of AI' },
-    { icon: '💡', name: 'Creative Thinking',    note: 'Turning ideas into projects' },
-    { icon: '🔗', name: 'API Integration',      note: 'Connecting services together' },
-    { icon: '🟨', name: 'JavaScript',           note: 'Frontend & scripting' },
-    { icon: '🌐', name: 'Web Development',      note: 'HTML, CSS, vanilla JS' },
-    { icon: '🔍', name: 'Problem Solving',      note: 'Finding creative solutions' },
-    { icon: '🚀', name: 'Rapid Prototyping',    note: 'From idea to working product' },
-    { icon: '🎯', name: 'Product Thinking',     note: 'Building what people actually want' },
-    { icon: '🐙', name: 'Git & GitHub',         note: 'Version control & open source' },
+    { icon: '🌐', name: 'Networking',           note: 'CCNA · VLAN · OSPF · DHCP · NAT' },
+    { icon: '🛡️', name: 'Active Directory',     note: 'Users, groups, GPO, permissions' },
+    { icon: '🖥️', name: 'Tier 2 Support',       note: 'Hardware, software, connectivity' },
+    { icon: '⚙️', name: 'SCCM',                 note: 'Software deployment & endpoints' },
+    { icon: '🤖', name: 'AI-Assisted Dev',      note: 'Claude, ChatGPT, Copilot' },
+    { icon: '🟨', name: 'JavaScript',           note: 'Scripting & side projects' },
+    { icon: '🐍', name: 'Python',               note: 'Basic knowledge' },
+    { icon: '🗄️', name: 'SQL',                  note: 'Basic knowledge' },
+    { icon: '💡', name: 'Creative Thinking',    note: 'Ideas → working products' },
+    { icon: '🗣️', name: 'Trilingual',           note: 'Russian · Hebrew · English' },
   ];
 
   async function loadRepos() {

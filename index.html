@@ -494,6 +494,43 @@
       border: 1px solid rgba(99, 102, 241, 0.15);
     }
 
+    /* ── Project live stats ── */
+    .project-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding: 1rem;
+      background: rgba(99, 102, 241, 0.06);
+      border: 1px solid rgba(99, 102, 241, 0.15);
+      border-radius: 10px;
+    }
+
+    .project-stat {
+      text-align: center;
+    }
+
+    .project-stat-value {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .project-stat-label {
+      display: block;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
     .card-footer {
       display: flex;
       align-items: center;
@@ -847,6 +884,23 @@
         </span>
         <h3 class="card-name">AniLibria-Stremio</h3>
         <p class="card-desc">Stremio addon that bridges Russian anime dubs from AniLibria into the Stremio ecosystem using a 4-step ID resolution pipeline: IMDB → AniList → Fuse.js fuzzy matching → HLS streams. Deployed on Render.</p>
+
+        <!-- Live stats -->
+        <div class="project-stats">
+          <div class="project-stat">
+            <span class="project-stat-value">243K+</span>
+            <span class="project-stat-label">Users this month</span>
+          </div>
+          <div class="project-stat">
+            <span class="project-stat-value">7K+</span>
+            <span class="project-stat-label">Users today</span>
+          </div>
+          <div class="project-stat">
+            <span class="project-stat-value">30K+</span>
+            <span class="project-stat-label">Daily requests</span>
+          </div>
+        </div>
+
         <div class="tech-pills">
           <span class="tech-pill">Node.js</span>
           <span class="tech-pill">Express</span>

@@ -927,7 +927,7 @@
   <div class="container">
     <p class="section-eyebrow reveal">Tech Stack</p>
     <h2 class="section-heading reveal d1">Skills</h2>
-    <p class="section-lead reveal d2">Technologies I use daily — auto-detected from my repos and project stack.</p>
+    <p class="section-lead reveal d2">What I actually bring to the table — a strong eye for what's possible, and the AI fluency to make it real.</p>
     <div class="skills-grid" id="skills-grid">
       <!-- Populated by JS -->
     </div>
@@ -1082,16 +1082,16 @@
   function langColor(l) { return LANG_COLORS[l] || '#6366f1'; }
 
   const STATIC_SKILLS = [
-    { icon: '🟨', name: 'JavaScript',    note: 'Primary language' },
-    { icon: '🟢', name: 'Node.js',       note: 'Backend & scripts' },
-    { icon: '🚂', name: 'Express',       note: 'REST API servers' },
-    { icon: '🔗', name: 'REST APIs',     note: 'Integration expert' },
-    { icon: '📡', name: 'HLS Streaming', note: 'Media delivery' },
-    { icon: '🔍', name: 'Fuse.js',       note: 'Fuzzy search' },
-    { icon: '🎌', name: 'AniList API',   note: 'Anime metadata' },
-    { icon: '🌐', name: 'API Pipelines', note: 'ID resolution chains' },
-    { icon: '☁️', name: 'Render',        note: 'Cloud deployment' },
-    { icon: '🐙', name: 'Git & GitHub',  note: 'Version control' },
+    { icon: '🤖', name: 'AI-Assisted Dev',     note: 'Claude, ChatGPT, Copilot' },
+    { icon: '✨', name: 'Prompt Engineering',   note: 'Getting the most out of AI' },
+    { icon: '💡', name: 'Creative Thinking',    note: 'Turning ideas into projects' },
+    { icon: '🔗', name: 'API Integration',      note: 'Connecting services together' },
+    { icon: '🟨', name: 'JavaScript',           note: 'Frontend & scripting' },
+    { icon: '🌐', name: 'Web Development',      note: 'HTML, CSS, vanilla JS' },
+    { icon: '🔍', name: 'Problem Solving',      note: 'Finding creative solutions' },
+    { icon: '🚀', name: 'Rapid Prototyping',    note: 'From idea to working product' },
+    { icon: '🎯', name: 'Product Thinking',     note: 'Building what people actually want' },
+    { icon: '🐙', name: 'Git & GitHub',         note: 'Version control & open source' },
   ];
 
   async function loadRepos() {
@@ -1154,18 +1154,8 @@
       }
 
       // ── Skills ────────────────────────────────────────────────────────
-      const detectedLangs = new Set(repos.map(r => r.language).filter(Boolean));
       const skills = [...STATIC_SKILLS];
-
-      // Append any language not already listed
-      const covered = new Set(STATIC_SKILLS.map(s => s.name));
-      detectedLangs.forEach(lang => {
-        if (!covered.has(lang)) {
-          skills.push({ icon: '💻', name: lang, note: 'Detected in repos' });
-        }
-      });
-
-      const ICONS = { JavaScript:'🟨', TypeScript:'🔷', Python:'🐍', HTML:'🧱', CSS:'🎨', Go:'🐹', Rust:'🦀', Java:'☕', Ruby:'💎' };
+      const ICONS = {};
 
       document.getElementById('skills-grid').innerHTML = skills.map((s, i) => `
         <div class="skill-card reveal" style="transition-delay:${i * 0.04}s">
@@ -1187,7 +1177,6 @@
           <a href="https://github.com/PabloKolaso" style="color:var(--accent)">Browse on GitHub →</a>
         </p>`;
 
-      // Render static skills anyway
       document.getElementById('skills-grid').innerHTML = STATIC_SKILLS.map((s, i) => `
         <div class="skill-card reveal" style="transition-delay:${i * 0.04}s">
           <div class="skill-icon">${s.icon}</div>
